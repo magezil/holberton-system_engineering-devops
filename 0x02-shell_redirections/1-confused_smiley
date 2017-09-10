@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "\"\xD4o\'"
+echo -e \"\("\xD4"o\)\'
