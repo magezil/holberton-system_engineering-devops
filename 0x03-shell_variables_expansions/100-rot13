@@ -1,0 +1,2 @@
+#!/bin/bash
+tr "[:alpha:]" "N-ZA-Mn-za-m"
