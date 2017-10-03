@@ -19,4 +19,4 @@
 16-clean_emacs *deletes all files in current working directory that end with ~*\
 17-tree *creates directories* welcome/ *,* welcome/to/ *, and* /welcome/to/holberton\
 18-commas *lists all files and directories in cwd separated by commas*\
-holberton.mgc *magic file to detect Holberton data files* \
+holberton.mgc *magic file to detect Holberton data files* 
