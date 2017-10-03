@@ -1,4 +1,4 @@
-#0x03-shell_variables_expansions
+# 0x03-shell_variables_expansions
 
 0-alias creates an alias for ls to rm * \
 1-hello_you prints hello to current Linux user\
