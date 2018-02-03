@@ -3,8 +3,5 @@
 filename="/etc/passwd"
 while IFS=':' read -r -a line
 do
-	# echo -n ${lines[*]}
-	# need fields 1,4,6
-	#cut -d":" -f 1,4,6 -s
-	echo ${line[0]}":"${line[3]}":"${line[5]}
+	echo "${line[0]}:${line[3]}:${line[5]}"
 done < "$filename"
