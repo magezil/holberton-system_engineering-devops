@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script reads in /etc/passwd and displays the username, group id, and home directory path for the user
+filename="/etc/passwd"
+while read -r _
+do
+	# need fields 1,4,6
+	cut -d":" -f 1,4,6 -s
+done < "$filename"
