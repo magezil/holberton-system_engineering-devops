@@ -14,5 +14,5 @@
 * This script displays the PID and process name of processes with the word `bash`
 
 ### 4-to_infinity_and_beyond
-* This script writes 'To infinity and beyond' indefinitely
+* This script writes `To infinity and beyond` indefinitely
 
