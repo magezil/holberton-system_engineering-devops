@@ -4,3 +4,6 @@
 ### 0-what-is-my-pid
 * This script displays its PID
 
+### 1-list_your_processes
+* This script displays a list of currently running processes in a user-oriented format
+
