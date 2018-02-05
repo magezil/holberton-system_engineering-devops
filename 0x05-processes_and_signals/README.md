@@ -24,3 +24,6 @@
 
 ### 7-highlander
 * This script displays `I am invincible!!!` when receiving a SIGTERM signal
+### 8-beheaded_process
+* This script kills the process 7-highlander
+
