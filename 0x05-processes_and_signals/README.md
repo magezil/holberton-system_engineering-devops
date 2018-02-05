@@ -16,3 +16,6 @@
 ### 4-to_infinity_and_beyond
 * This script writes `To infinity and beyond` indefinitely
 
+### 5-kill_me_now
+* kill the 4-to_infinity_and_beyond process
+
