@@ -9,3 +9,10 @@
 
 ### 2-show_your_bash_pid
 * This script displays the line containing the word `bash`
+
+### 3-show_your_bash_pid_made_easy
+* This script displays the PID and process name of processes with the word `bash`
+
+### 4-to_infinity_and_beyond
+* This script writes 'To infinity and beyond' indefinitely
+

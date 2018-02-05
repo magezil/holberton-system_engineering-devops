@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script writes 'To infinity and beyond' indefinitely
+while [ 1 ]
+do
+	echo "To infinity and beyond"
+done
