@@ -19,3 +19,6 @@
 ### 5-kill_me_now
 * kill the 4-to_infinity_and_beyond process
 
+### 6-kill_me_now_made_easy
+* This script kills 4-to_infinity_and_beyond
+
