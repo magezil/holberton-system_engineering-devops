@@ -22,3 +22,5 @@
 ### 6-kill_me_now_made_easy
 * This script kills 4-to_infinity_and_beyond
 
+### 7-highlander
+* This script displays `I am invincible!!!` when receiving a SIGTERM signal
