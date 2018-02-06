@@ -33,3 +33,6 @@
   * Displays `Y U no love me?!" when get SIGINT
   * Deletes file with pid when receive a SIGQUIT or SIGTERM signal
 * Usage: `sudo ./100-process_and_pid_file`
+### 101-manage_my_process
+* This script manages daemon `manage_my_process`
+
