@@ -28,8 +28,8 @@
 * This script kills the process 7-highlander
 
 ### 100-process_and_pid_file
-* 
-
-### 100-process_and_pid_file
-* This script creates a file with its pid, displays message indefinitely, displays another message when receive a SIGTERM, displays another message when get SIGINT, deletes file when receive a SIGQUIT or SIGTERM signal
-
+* This script creates a file with its pid, displays `To infinity and beyond` indefinitely
+  * Displays `I hate the kill command` when receive a SIGTERM
+  * Displays `Y U no love me?!" when get SIGINT
+  * Deletes file with pid when receive a SIGQUIT or SIGTERM signal
+* Usage: `sudo ./100-process_and_pid_file`
