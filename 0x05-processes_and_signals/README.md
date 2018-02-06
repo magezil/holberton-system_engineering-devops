@@ -27,3 +27,9 @@
 ### 8-beheaded_process
 * This script kills the process 7-highlander
 
+### 100-process_and_pid_file
+* 
+
+### 100-process_and_pid_file
+* This script creates a file with its pid, displays message indefinitely, displays another message when receive a SIGTERM, displays another message when get SIGINT, deletes file when receive a SIGQUIT or SIGTERM signal
+
