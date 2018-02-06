@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+int infinite_while(void)
+{
+	while (1)
+		sleep(1);
+	return (0);
+}
+
 /**
  * main - creates 5 zombie process
  *
@@ -15,13 +22,11 @@ int main(void)
 	for (i = 0; i < 5; i++)
 	{
 		child = fork();
-		if (child == 0)
+		if (child <= 0)
 			exit(0);
 		else
-		{
 			printf("Zombie process created, PID: %d\n", child);
-		}
 	}
-	sleep(50);
+	infinite_while();
 	return (0);
 }
