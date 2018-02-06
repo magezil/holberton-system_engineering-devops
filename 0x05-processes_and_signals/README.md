@@ -36,3 +36,6 @@
 ### 101-manage_my_process
 * This script manages daemon `manage_my_process`
 
+### 102-zombie.c
+* makes 5 zombie processes
+
