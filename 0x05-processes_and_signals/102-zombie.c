@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * infinite_while - prevents process from ending to make it a zombie
+ *
+ * Return: Always 0
+ */
 int infinite_while(void)
 {
 	while (1)
