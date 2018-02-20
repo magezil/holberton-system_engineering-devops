@@ -13,3 +13,5 @@
 ### 3-show_attached_IPs
 * This script displays all active IPv4 IPs on machine
 
+### 4-port_listening_on_localhost
+* This script listens on port `98` on `localhost`
