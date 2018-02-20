@@ -10,3 +10,6 @@
 ### 2-change_your_home_IP
 * This script changes home IP and facebook.com IP
 
+### 3-show_attached_IPs
+* This script displays all active IPv4 IPs on machine
+
