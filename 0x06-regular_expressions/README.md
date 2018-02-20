@@ -25,3 +25,5 @@
 ### 7-OMG_WHY_ARE_YOU_SHOUTING.rb
 * Regex match capital letters
 
+### 100-textme.rb
+* Script outputs `[SENDER],[RECEIVER],[FLAGS]` based on a log file
