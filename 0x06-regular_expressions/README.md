@@ -27,3 +27,7 @@
 
 ### 100-textme.rb
 * Script outputs `[SENDER],[RECEIVER],[FLAGS]` based on a log file
+
+### 101-passed_linkedin_regex_challenge.jpg
+* Screenshot of "Congratulations" page after completing the LinkedIn regex puzzle
+  * https://engineering.linkedin.com/puzzle
