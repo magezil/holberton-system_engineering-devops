@@ -2,4 +2,4 @@
 
 ## CMD Challenge
 * https://cmdchallenge.com/
-### Files contain answers to stated questions
+### Files contain link to screenshot of completed levels
