@@ -1,0 +1,9 @@
+echo "hello world"
+pwd
+ls
+cat access.log
+tail -n 5 access.log
+grep "GET" access.log
+find -type f -exec grep -l "500" {} + |cut -b 3-
+ls access.log*
+grep -Rh '500' */
