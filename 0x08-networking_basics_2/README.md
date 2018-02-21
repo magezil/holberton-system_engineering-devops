@@ -5,13 +5,13 @@
 * What is localhost? (2) this computer
 
 ### 1-wildcard
-* What is 0.0.0.0? (2) All the IPs
+* What is 0.0.0.0? (1) All IPv4 addresses on the local machine
 
 ### 2-change_your_home_IP
 * This script changes home IP and facebook.com IP
 
 ### 3-show_attached_IPs
-* This script displays all active IPv4 IPs on machine
+* This script displays all active IPv4 IPs on the local machine
 
 ### 4-port_listening_on_localhost
 * This script listens on port `98` on `localhost`
