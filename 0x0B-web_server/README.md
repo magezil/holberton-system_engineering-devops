@@ -10,3 +10,6 @@
 ### 2-setup_a_domain_name
 * Domain name set up and associated with server
 
+### 3-redirection
+* Configure /redirect_me to another page permanently
+
