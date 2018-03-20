@@ -11,3 +11,5 @@
 0x08-networking_basics_2 - Networking basics #1  
 0x09-web_infrastructure_design - Web infrastructure design  
 0x0A-ssh - SSH  
+0x0B-web_server - Web server  
+0x0C-web_stack_debugging_0 - Web stack debugging  
