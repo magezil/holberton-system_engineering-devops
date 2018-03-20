@@ -2,5 +2,5 @@
 # Installs nginx to web server
 apt-get -y update
 apt-get -y install nginx
-echo "Holberton School" > /usr/local/nginx/html/index.html
+echo "Holberton School" > /usr/share/nginx/html/index.html
 service nginx restart
