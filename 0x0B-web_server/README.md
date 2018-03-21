@@ -13,3 +13,6 @@
 ### 3-redirection
 * Configure /redirect_me to another page permanently
 
+### 4-not_found_page_404
+* Create a custom 404 page
+
