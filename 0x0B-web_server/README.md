@@ -16,3 +16,5 @@
 ### 4-not_found_page_404
 * Create a custom 404 page
 
+### 404.html
+* Fully customized (basic) 404 page
