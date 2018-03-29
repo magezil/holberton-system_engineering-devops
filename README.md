@@ -13,3 +13,4 @@
 0x0A-ssh - SSH  
 0x0B-web_server - Web server  
 0x0C-web_stack_debugging_0 - Web stack debugging  
+0x0D-configuration_management - Configuration management  
