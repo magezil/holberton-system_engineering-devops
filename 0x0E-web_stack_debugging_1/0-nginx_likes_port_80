@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Debug container to listen to port 80
+sed -i "/sites-enabled/sites-available/" /etc/nginx/nginx.conf
