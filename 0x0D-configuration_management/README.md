@@ -7,3 +7,6 @@
 ### 1-install_a_package.pp
 * Install `puppet-lint` using Puppet
 
+### 2-execute_a_command.pp
+* Create a manifest that kills process `killmenow` using Puppet
+
