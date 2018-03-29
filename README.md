@@ -12,5 +12,6 @@
 0x09-web_infrastructure_design - Web infrastructure design  
 0x0A-ssh - SSH  
 0x0B-web_server - Web server  
-0x0C-web_stack_debugging_0 - Web stack debugging  
+0x0C-web_stack_debugging_0 - Web stack debugging #0 
 0x0D-configuration_management - Configuration management  
+0x0E-web_stack_debugging_1 - Web stack debugging #1  
