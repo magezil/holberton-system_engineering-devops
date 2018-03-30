@@ -4,3 +4,6 @@
 ### 0-nginx_likes_port_80
 * Debug container to listen to port 80
 
+### 1-debugging_made_short
+* Bash script fix
+
