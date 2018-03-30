@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Install load balancer HAproxy with version 1.5 or greater; uses roundrobin algorithm
+add-apt-repository -y ppa:vbernat/haproxy-1.5
+apt-get -y update
+apt-get -y dist-upgrade
+apt-get install haproxy
+
+echo -e "\nlisten appname 0:80\n\t mode http\n\tbalance roundrobin\n\tserver 256-web-01 34.224.71.206:80 check\n\tserver 256-web-02 54.174.221.228:80 check" >> /etc/haproxy/haproxy.cfg
+
+service haproxy restart
