@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Configure /redirect_me to another page permanently
 apt-get -y install nginx
+echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
 new_string="location /redirect_me {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"
 sed -i "/# Only/ i $new_string" /etc/nginx/sites-available/default
 service nginx restart
