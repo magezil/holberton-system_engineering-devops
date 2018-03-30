@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Set up HTTP response for two servers
+served_by="X-Served-By $(cat /etc/hostname);"
+sed -i "/index.htm;/ i $served_by" /etc/nginx/sites-enabled/default
+service nginx restart
