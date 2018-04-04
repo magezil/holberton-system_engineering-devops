@@ -8,8 +8,8 @@
   * Where should you put the certificate when you set up HTTPS on your website? On your website web server(s) - 3
 
 ### 1-world_wide_web
-* Displays information for subdomains www, lb-01, web-01, web-02
+* Displays information for subdomains `www`, `lb-01`, `web-01`, `web-02`
   * Takes in domain (required) and subdomain (optional)
-  * Output: The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]
+  * Output: The subdomain `[SUB_DOMAIN]` is a `[RECORD_TYPE]` record and points to `[DESTINATION]`
     * If no subdomain entered, shows information for all subdomains listed above
 
