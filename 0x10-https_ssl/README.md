@@ -13,3 +13,6 @@
   * Output: The subdomain `[SUB_DOMAIN]` is a `[RECORD_TYPE]` record and points to `[DESTINATION]`
     * If no subdomain entered, shows information for all subdomains listed above
 
+### 2-haproxy_ssl_termination
+* Contains the contents of the /etc/haproxy/haproxy.cfg file after creating certbot
+
