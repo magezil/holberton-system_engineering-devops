@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Displays information for subdomains www, lb-01, web-01, web-02
+#  * Takes in domain (required) and subdomain (optional)
+#  * Output: The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]
+#    * If no subdomain entered, shows information for all subdomains listed above
+
+domain=$1
+if [ "$#" -eq 2 ]; then
+	sds=$2
+else
+	sds=("www" "lb-01" "web-01" "web-02")
+fi
+for sd in "${sds[@]}"; do
+	echo -n "The subdomain $sd"
+	dig "$sd.$domain" | grep -A1 'ANSWER SECTION:' | tail -n -1 | awk '{ print " is a " $4 " record and points to " $5}'
+done
