@@ -4,7 +4,8 @@ apt-get -y install nginx
 echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
 new_string="location /redirect_me {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"
 sed -i "/# Only/ i $new_string" /etc/nginx/sites-available/default
-echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
+#echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
+curl -s https://raw.githubusercontent.com/magezil/holberton-system_engineering-devops/master/0x0B-web_server/404.html -o 404.html
 replace="#error_page"
 new_string="error_page"
 sed -i "s/$replace/$new_string/" /etc/nginx/sites-available/default
