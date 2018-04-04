@@ -16,3 +16,6 @@
 ### 2-haproxy_ssl_termination
 * Contains the contents of the /etc/haproxy/haproxy.cfg file after creating certbot
 
+### 100-redirect_http_to_https
+* Config file to automatically redirect HTTP traffic to HTTPS
+
