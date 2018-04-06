@@ -10,3 +10,6 @@
 ### 1-block_all_incoming_traffic_but
 * ufw commands to setup firewall to block all incoming traffic except ports 22 (SSH), 443 (HTTPS SSL), 80 (HTTP)
 
+### 100-port_forwarding
+* Copy of `ufw` configuration file modified to allow redirect from port `8080` to `80`
+
