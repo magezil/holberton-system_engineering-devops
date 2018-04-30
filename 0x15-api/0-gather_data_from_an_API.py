@@ -11,8 +11,7 @@ import requests
 from sys import argv
 
 
-if __name__ == "__main__":
-    employee_id = int(argv[1])
+def get_completed(employee_id):
     url = 'https://jsonplaceholder.typicode.com/users/{}'.format(employee_id)
     response = requests.get(url).json()
     name = response.get("name")
@@ -31,3 +30,7 @@ if __name__ == "__main__":
     print("Employee {} is done with tasks({}/{}):".format(name, done, total))
     for task in tasks:
         print("    {}".format(task))
+
+
+if __name__ == "__main__":
+    get_completed(int(argv[1]))
