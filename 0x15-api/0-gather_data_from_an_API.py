@@ -2,16 +2,20 @@
 """
     Script uses REST API to return information about TODO list progress
     based on given employee ID
-
-    Output:
-        Employee NAME is done with tasks(NUMBER_DONE/TOTAL_NUMBER_OF_TASKS):
-            TASK_TITLE
 """
 import requests
 from sys import argv
 
 
 def get_completed(employee_id):
+"""
+    Script uses REST API to return information about TODO list progress
+    based on given employee ID
+
+    Output:
+        Employee NAME is done with tasks(NUMBER_DONE/TOTAL_NUMBER_OF_TASKS):
+            TASK_TITLE
+"""
     url = 'https://jsonplaceholder.typicode.com/users/{}'.format(employee_id)
     response = requests.get(url).json()
     name = response.get("name")
