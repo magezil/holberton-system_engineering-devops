@@ -2,6 +2,10 @@
 """
     Script uses REST API to return information about TODO list progress
     based on given employee ID
+
+    Output:
+        Employee NAME is done with tasks(NUMBER_DONE/TOTAL_NUMBER_OF_TASKS):
+            TASK_TITLE
 """
 import requests
 from sys import argv
@@ -13,19 +17,17 @@ if __name__ == "__main__":
     response = requests.get(url).json()
     name = response.get("name")
 
-    todo_url = 'https://jsonplaceholder.typicode.com/todos/'
-    completed = 0
+    done = 0
     tasks = []
     total = 0
+    todo_url = 'https://jsonplaceholder.typicode.com/todos/'
     for line in requests.get(todo_url).json():
         if line.get('userId') == employee_id:
             total += 1
             if line.get('completed'):
-                completed += 1
+                done += 1
                 tasks.append(line.get('title'))
 
-    print("Employee {} is done with tasks({}/{}):".format(name,
-                                                          completed,
-                                                          total))
+    print("Employee {} is done with tasks({}/{}):".format(name, done, total))
     for task in tasks:
         print("    {}".format(task))
