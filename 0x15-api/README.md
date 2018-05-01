@@ -9,3 +9,6 @@
 ### 2-export_to_JSON.py
 * Export TODO list data to JSON for given employee ID
 
+### 3-dictionary_of_list_of_dictionaries.py
+* Records tasks from all employees and exports TODO list data to JSON
+
