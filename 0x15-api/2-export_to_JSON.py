@@ -66,13 +66,11 @@ def save_to_CSV(employee_id):
                 writer.writerow(line)
 
 
-def save_to_JSON(employee_id):
+def get_todo_dict(employee_id):
     """
-        Export TODO list data to JSON for given employee_id
+        Return dictionary of TODO list data for given employee id
 
-        File name: USER_ID.json
-
-        Format of file:
+        Format of dictionary:
             { "USER_ID":
             [  {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS,
                 "username": "USERNAME"}},
@@ -95,7 +93,25 @@ def save_to_JSON(employee_id):
             line['username'] = name
             del line['id']
             todo_list.append(line)
-    todo_list = json.dumps({employee_id: todo_list})
+    return {employee_id: todo_list}
+
+
+def save_to_JSON(employee_id):
+    """
+        Export TODO list data to JSON for given employee_id
+
+        File name: USER_ID.json
+
+        Format of file:
+            { "USER_ID":
+            [  {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS,
+                "username": "USERNAME"}},
+               {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS,
+                "username": "USERNAME"}}, ...
+            ]
+            }
+    """
+    todo_list = json.dumps(get_todo_dict(employee_id))
     with open(filename, 'w') as f:
         f.write(todo_list)
 
