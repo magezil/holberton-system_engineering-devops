@@ -33,7 +33,7 @@ def get_completed(employee_id):
 
     print("Employee {} is done with tasks({}/{}):".format(name, done, total))
     for task in tasks:
-        print("    {}".format(task))
+        print("\t{}".format(task))
 
 
 if __name__ == "__main__":
