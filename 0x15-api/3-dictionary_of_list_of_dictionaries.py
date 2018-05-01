@@ -36,7 +36,7 @@ def get_completed(employee_id):
 
     print("Employee {} is done with tasks({}/{}):".format(name, done, total))
     for task in tasks:
-        print("    {}".format(task))
+        print("\t {}".format(task))
 
 
 def save_to_CSV(employee_id):
