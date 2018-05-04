@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-    Finds number of subscribers for given subreddit account, 0 if invalid subreddit
+    Finds number of subscribers for given subreddit account,
+    or 0 if invalid subreddit
 """
 import requests
 
@@ -8,7 +9,7 @@ import requests
 def number_of_subscribers(subreddit):
     """
         Sends a query to Reddit API
-        
+
         Returns the number of subscribers for given subreddit
     """
     url = "http://api.reddit.com/r/{}/about".format(subreddit)
