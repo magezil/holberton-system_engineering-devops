@@ -12,7 +12,7 @@ def number_of_subscribers(subreddit):
 
         Returns the number of subscribers for given subreddit
     """
-    url = "http://api.reddit.com/r/{}/about".format(subreddit)
+    url = "https://api.reddit.com/r/{}/about".format(subreddit)
     headers = {'User-Agent': 'CustomClient/1.0'}
     r = requests.get(url, headers=headers, allow_redirects=False).json()
     if 'data' in r:
