@@ -6,3 +6,8 @@
 
   * Prototype: `def number_of_subscribers(subreddit):`
 
+### 1-top_ten.py
+* Prints the titles of the first 10 hot posts of given subreddit
+
+  * Prototype: `def top_ten(subreddit):`
+
