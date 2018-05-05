@@ -16,3 +16,8 @@
 
   * Prototype: `def recurse(subreddit, hot_list=[]):`
 
+### 100-count.py
+* Prints sorted count of given keywords
+
+  * Prototype: `def count_words(subreddit, word_list):`
+
