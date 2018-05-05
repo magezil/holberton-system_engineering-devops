@@ -21,13 +21,14 @@ def recurse(subreddit, hot_list=[], after=""):
         return None
     r = r.json()
     if 'data' in r:
-        data = r['data']
-        if not data['children']:
+        data = r.get('data')
+        if not data.get('children'):
             return hot_list
-        hot_list += [post['data']['title'] for post in data['children']]
-        if not data['after']:
+        hot_list += [post.get('data').get('title')
+                     for post in data.get('children')]
+        if not data.get('after'):
             return hot_list
-        recurse(subreddit, hot_list, data['after'])
+        recurse(subreddit, hot_list, data.get('after'))
         if hot_list[-1] is None:
             del hot_list[-1]
         return hot_list
