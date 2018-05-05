@@ -24,6 +24,8 @@ def recurse(subreddit, hot_list=[], last_id=None):
             last_id = post['data']['id']
         if last_id is not None:
             hot_list.append(recurse(subreddit, hot_list, last_id))
+        if hot_list[-1] is None:
+            del hot_list[-1]
         return hot_list
     else:
         return None
