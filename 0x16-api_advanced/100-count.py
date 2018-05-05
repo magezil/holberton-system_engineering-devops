@@ -44,5 +44,8 @@ def print_counts(counts):
     """
     if not counts:
         return
-    for key in sorted(counts, reverse=False):
-        print("{}: {:d}".format(key, counts[key]))
+    rev_counts = {}
+    for key, value in counts.items():
+        rev_counts[value] = key
+    for key in sorted(rev_counts, reverse=True):
+        print("{}: {:d}".format(rev_counts[key], key))
