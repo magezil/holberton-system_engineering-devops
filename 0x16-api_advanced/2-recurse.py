@@ -24,7 +24,6 @@ def recurse(subreddit, hot_list=[], after=""):
         data = r['data']
         if not data['children']:
             return hot_list
-        # fill_list(data['children'], hot_list)
         hot_list += [post['data']['title'] for post in data['children']]
         if not data['after']:
             return hot_list
