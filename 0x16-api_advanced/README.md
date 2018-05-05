@@ -11,3 +11,8 @@
 
   * Prototype: `def top_ten(subreddit):`
 
+### 2-recurse.py
+* Returns list of titles of hot articles
+
+  * Prototype: `def recurse(subreddit, hot_list=[]):`
+
