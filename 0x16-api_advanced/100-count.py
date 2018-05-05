@@ -24,7 +24,7 @@ def count_words(subreddit, word_list, counts={}, after=""):
         if not data.get('children'):
             return hot_list
         for post in data.get('children'):
-            for word in post.get('data').get('title').split():
+            for word in post.get('data').get('title').lower().split():
                 if word in word_list:
                     if word in counts:
                         counts[word] += 1
@@ -44,5 +44,5 @@ def print_counts(counts):
     """
     if not counts:
         return
-    for key in sorted(counts, reverse=True):
+    for key in sorted(counts, reverse=False):
         print("{}: {:d}".format(key, counts[key]))
